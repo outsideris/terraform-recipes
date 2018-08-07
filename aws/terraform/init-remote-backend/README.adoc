@@ -1,0 +1,40 @@
+= Initialize S3 Remote Backend
+
+After link:https://github.com/outsideris/terraform-recipes/tree/master/aws/terraform/prepare-remote-backend[Preparing S3 Remote Backend],
+initialize link:https://www.terraform.io/intro/getting-started/remote.html[remote backend].
+
+It will copy local state into the S3 bucket if any.
+
+Run `terraform init` after configuring
+link:https://www.terraform.io/docs/backends/types/s3.html[s3 remote backend].
+
+[source, bash]
+----
+$ terraform init
+
+Initializing the backend...
+Do you want to copy existing state to the new backend?
+  Pre-existing state was found while migrating the previous "local" backend to the
+  newly configured "s3" backend. No existing state was found in the newly
+  configured "s3" backend. Do you want to copy this state to the new "s3"
+  backend? Enter "yes" to copy and "no" to start with an empty state.
+
+  Enter a value: yes
+
+Releasing state lock. This may take a few moments...
+
+Successfully configured the backend "s3"! Terraform will automatically
+use this backend unless the backend configuration changes.
+
+Initializing provider plugins...
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+----
