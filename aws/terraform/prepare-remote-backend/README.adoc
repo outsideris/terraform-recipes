@@ -1,0 +1,4 @@
+= Prepare S3 Remote Backend
+
+To use S3 link:https://www.terraform.io/intro/getting-started/remote.html[remote backend]
+for storing state, make an S3 bucket and DynamoDB table first.
