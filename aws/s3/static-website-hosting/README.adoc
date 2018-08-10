@@ -1,0 +1,17 @@
+= Static Website Hosting on S3
+
+If you want to serve a static website, you can serve it via S3 without a server.
+
+This recipe is consist of:
+
+- S3 bucket to keep your static file like `.html`, `.js`, `.css` moreover.
+- CloudFront to serve static files with CDN.
+- A domain linked with CloudFront.
+- HTTPS supported by a certificate issued in
+  link:https://console.aws.amazon.com/acm/home[ACM]
+
+Terraform can request an ACM certificate, but it is not able to validate it.
+You have to create the certificate and validate it by email
+before creating other resources.
+(e.g. `terraform plan -target=aws_acm_certificate.website`)
+
