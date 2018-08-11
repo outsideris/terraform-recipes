@@ -1,0 +1,6 @@
+= SPA Hosting on S3
+
+This recipe based on
+link:https://github.com/outsideris/terraform-recipes/tree/master/aws/s3/static-website-hosting[Static Website Hosting on S3].
+
+Only diffenent is `custom_error_response` to support push state routing of SPA.
