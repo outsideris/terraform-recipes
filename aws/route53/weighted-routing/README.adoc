@@ -1,0 +1,10 @@
+= Weighted Routing DNS record
+
+If you want to distribute traffic to two or more backend servers and CDN distribution on the same domain,
+weighted routing allows distributing the traffic as weight.
+See link:https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-weighted[AWS document] for more details.
+
+This recipe is consist of:
+
+- creating a hostzone for your domain
+- creating multiple CNAME records for weighted Routing
