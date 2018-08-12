@@ -1,0 +1,6 @@
+= Simple Routing DNS record
+
+This recipe is consist of:
+
+- creating a hostzone for your domain
+- creating a A record to route a IP.
