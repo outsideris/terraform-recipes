@@ -1,0 +1,6 @@
+= Create an ECS cluster
+
+If you want to use ECS, you have to create a cluster first.
+
+This recipe creates ECS cluster and add cluster instances
+with launch configuration and auto-scaling group.
